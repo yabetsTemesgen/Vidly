@@ -2,13 +2,13 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 //import NavLink from "./../../node_modules/react-router-dom/es/NavLink";
 //import Rentals from "./rentals";
-
+import img from "./common/vidly.png";
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       {/* <div className="container-fluid"> */}
       <Link className="navbar-brand" to="/">
-        Vidly
+        <img src={img} alt="" height={90} width={120} />
       </Link>
       <button
         className="navbar-toggler"
@@ -34,6 +34,9 @@ const NavBar = () => {
           </NavLink>
           <NavLink className="nav-link" to="/login">
             Login
+          </NavLink>
+          <NavLink className="nav-link" to="/register">
+            Register
           </NavLink>
           {/* <NavLink className="nav-link disabled">Disabled</NavLink> */}
         </div>
